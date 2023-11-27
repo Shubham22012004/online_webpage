@@ -1,0 +1,38 @@
+.movie-info {
+    padding: 1em;
+}
+
+#kai {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+
+.movie-card {
+    width: 300px;
+    margin: 1em;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow:auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+#shu
+{
+    display: inline-flexbox;
+}
+
+#search
+{
+    display: flex;
+}
+

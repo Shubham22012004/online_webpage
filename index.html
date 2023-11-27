@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+-->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+ 
+    <!-- Auto Complete -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/css/autoComplete.min.css">
+
+    <link rel="stylesheet" href="movie1.css">
+    
+
+</head>
+<body id="content" style="font-family: 'Noto Sans JP', sans-serif; background: #00000065;">
+
+    <div class="ml-container" style="display: block;">
+		
+        <center><h1 ><a href="movie1.html" style="text-decoration: none;"> Movie Recommendation System </a> </h1> </center>
+        <div id="search">
+        <div id="shu" class="form-group shadow-textarea" style="margin: 30px 0px 0px 30px;text-align: center;color: rgb(190, 40, 40); width: auto;">
+            <input type="text" name="movie" class="movie form-control" id="autoComplete" autocomplete="off" placeholder="Enter the Movie Name" style="background-color: #e5e5b8e1;border-color:#b41f1f; width: 500px;color: #181818" required="required" />
+            
+        </div>
+        <center>
+          
+          <div id="shu" class="form-group" style="text-align:right; margin:30px 0px 0px 25px">
+            <button class="btn btn-primary btn-block movie-button" style="background-color: #f31420;text-align: center;border-color: #8d0f15;width:120px;" disabled="true" >Enter</button><br><br>
+          </div>
+        </center>  
+        </div>
+      </div>
+
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="cap_marvel.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="cap_marvel.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="cap_marvel.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> 
+
+      <section id="kai">
+        <div class="movie-card">
+            <img style="height: 532px;" src="jok.jpg" alt="Movie 1">
+            <div class="movie-info">
+                <h2>Movie 1</h2>
+                <p>Genre: Action</p>
+                <p>Rating: 4.5/5</p>
+            </div>
+        </div>
+    
+        <div class="movie-card">
+            <img src="deadpool.jpg" alt="Movie 2" style="display:inline-block;">
+            <div class="movie-info">
+                <h2>Movie 2</h2>
+                <p>Genre: Drama</p>
+                <p>Rating: 4.0/5</p>
+            </div>
+        </div>
+    
+        <div class="movie-card">
+          <img style="height: 532px;"  src="black.jpg" alt="Movie 3">
+          <div class="movie-info">
+              <h2>Movie 3</h2>
+              <p>Genre: Action</p>
+              <p>Rating: 4.5/5</p>
+          </div>
+    
+      </div>
+    
+        <!-- Add more movie cards as needed -->
+    
+    </section>
+    
+    
+      <div id="loader" class="text-center">
+      </div>
+      
+      <div class="fail">
+        <center><h3>Sorry! The movie you requested is not in our database. 
+        Please check the spelling or try with other movies!</h3></center>
+      </div>
+    
+        <div class="results">
+        <center>
+          <h2 id="name" class="text-uppercase"></h2>
+        </center>
+        </div>
+        
+        <div class="footer" style="">Made with<span style="font-size:150%;color:red;"> &hearts; </span>by team</div>
+
+        
+    
+</body>
+</html>
+,
